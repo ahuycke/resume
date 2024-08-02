@@ -1,11 +1,12 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{enumitem}
+\usepackage[left=0.5 in,top=0.5in,right=0.5 in,bottom=0.5in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Andrew Huycke} % Your name
 % You can merge both of these into a single line, if you do not have a website.
-\address{918-800-9785 \\ andrewhuycke88@gmail.com \\ github.com/ahuycke}
+\address{918-800-9785 \\ ahuycke3@gatech.edu \\ github.com/ahuycke \\ https://www.linkedin.com/in/andrew-huycke}
 %\address{\href{mailto:contact@faangpath.com}{contact@faangpath.com} \\ \href{https://linkedin.com/company/faangpath}{linkedin.com/company/faangpath} \\ \href{www.faangpath.com}{www.faangpath.com}}  %
 
 \begin{document}
@@ -16,8 +17,8 @@
 
 \begin{rSection}{Education}
 
-{\bf Georgia Institute of Technology} \hfill {Aug 2024 - 2025}\\
-Master's of Science in Analytics (In Person) \\
+{\bf Georgia Institute of Technology} \hfill {Aug 2024 - May 2025}\\
+Master of Science in Analytics (In Person) \\
 {\bf Colorado School of Mines} \hfill {Aug 2021 - May 2024}\\
 Bachelor's of Science in Computer Science + Data Science \hfill {GPA: 3.990}\\
 \textbf{Relevant Coursework}: Machine Learning, Data Structures, Algorithms, Linux OS, Data Science, Software Engineering, Database Management, Multivariate Analysis, Applied Statistics, Probability, Linear Algebra
@@ -30,33 +31,43 @@ Bachelor's of Science in Computer Science + Data Science \hfill {GPA: 3.990}\\
 \end{rSection}
 \vspace{-6pt}
 
-\begin{rSection}{EXPERIENCE AND PROJECTS}
+\begin{rSection}{EXPERIENCE}
 
-\textbf{Product and Strategy Intern} \hfill Summer 2023\\
-RSM \hfill \textit{Greenwood Village, CO}
+\textbf{Nuveen} \hfill Summer 2024\\
+Data Science and Technology Intern \hfill \textit{Charlotte, NC}
 \vspace{-6pt}
- \begin{itemize}
+ \begin{itemize}[leftmargin=*]
     \itemsep -6pt {} 
-     \item Assembled a centralized database of client information in \textbf{SQL} to facilitate client-specific recommendations 
+    \item Created application to extract business metrics from documents, achieving a 5000\% speedup in data extraction
+    \item Built backend with \textbf{Python} and \textbf{Langchain} in order to interface with large language models
+    \item Implemented retrieval augmented generation (RAG) to improve quality of extracted data
+    \item Deployed the application in an elastic cloud compute server in \textbf{AWS} for scalability
+ \end{itemize}
+
+ \textbf{HiLabs} \hfill Fall 2023\\
+Field Session Intern \hfill \textit{Golden, CO}
+\vspace{-6pt}
+ \begin{itemize}[leftmargin=*]
+    \itemsep -6pt {} 
+    \item Created a large language model (LLM) based educational tool to assess student knowledge in courses
+    %\item Utilized \textbf{Langchain} and \textbf{llama} within \textbf{Python} for LLM prompting
+    \item Built knowledge graphs of materials with \textbf{NetworkX}, leading to an 80\% decrease in question generation time
+    \item Performed iterative unit testing on LLM answer validation prompts, resulting in a 60\% increase in accuracy
+ \end{itemize}
+
+\textbf{RSM} \hfill Summer 2023\\
+Product and Strategy Intern \hfill \textit{Greenwood Village, CO}
+\vspace{-6pt}
+ \begin{itemize}[leftmargin=*]
+    \itemsep -6pt {} 
+     \item Designed and assembled a database of client information in \textbf{SQL} to facilitate client-specific recommendations 
      \item Built a \textbf{Python} script to automate the data entry pipeline for all employees
      \item Leveraged \textbf{x++} to scrape client data from Dynamics 365
      \item Developed a \textbf{PowerApp} to allow for seamless viewing and querying of the client database
  \end{itemize}
- 
-%\vspace{-4pt}
 
-\textbf{Field Session Intern} \hfill Fall 2023\\
-HiLabs \hfill
-\vspace{-6pt}
- \begin{itemize}
-    \itemsep -6pt {} 
-    \item Created a large language model (LLM) based educational tool to assess student knowledge in courses
-    \item Utilized \textbf{langchain} and \textbf{llama} within \textbf{Python} for LLM prompting
-    \item Developed a Python notebook to parse course data and create a knowledge graph with \textbf{NetworkX}
-    \item Generated questions to ask students by feeding weakly connected components of the knowledge graph to llama
-    \item Performed extensive unit testing to iteratively improve LLM question generation and answer validation prompts
-    \item Gained experience with high performance computing (HPC) and resource allocation to run a lllama 70b model
- \end{itemize}
+\end{rSection}
+%\vspace{-4pt}
  
 %\vspace{-4pt}
 
@@ -78,37 +89,37 @@ HiLabs \hfill
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 
-%\begin{rSection}{PROJECTS}
-%\vspace{-1.25em}
-\item \textbf{NBA Player Height, Weight, and Position Predictor} %\hfill 2022
+\begin{rSection}{PROJECTS}
+
+\textbf{AI Chef Project (1st place out of 12 groups)} \hfill %\\
+%Colorado School of Mines \hfill \textit{Golden, CO}
 \vspace{-6pt}
- \begin{itemize}
+ \begin{itemize}[leftmargin=*]
     \itemsep -6pt {} 
-     \item Created several machine learning models in \textbf{Python} using \textbf{Sklearn, Pandas, and Numpy} to predict NBA player heights, weights, and positions given their per 36 minute stats
-     \item Models incorporated include linear regression models to predict height and weight, as well as a logistic regression clustering model to predict player positions
-    \item Leveraged \textbf{BeautifulSoup} and \textbf{Request} libraries in Python to make a script that scrapes NBA player names, heights, and weights off the internet and generates a .csv file with the data
+     \item Leveraged the \textbf{OpenAI API} to generate customized recipes for users based on ingredients available, dietary restrictions, price restrictions, and more
+     \item Built user interface on top of \textbf{Streamlit} to allow for user input, image display, and recipe display
+ \end{itemize}
+
+%\vspace{-1.25em}
+\textbf{NBA Player Height, Weight, and Position Predictor} %\hfill 2022
+\vspace{-6pt}
+ \begin{itemize}[leftmargin=*]
+    \itemsep -6pt {} 
+     \item Created machine learning models in \textbf{Python} using \textbf{Sklearn, Pandas, and Numpy} to predict NBA player heights, weights, and positions given their stats, with the best model achieving 0.81 accuracy
+     \item Leveraged \textbf{BeautifulSoup} and \textbf{Request} libraries in Python to scrape player information
  \end{itemize}
 
  %\vspace{-4pt}
 
-
- \textbf{TA/Mentor for Introduction to Computer Science} \hfill Aug 2022 - Dec 2023%\\
+%
+% \textbf{TA/Mentor for Introduction to Computer Science} \hfill Aug 2022 - Dec 2023%\\
 %Colorado School of Mines \hfill \textit{Golden, CO}
-\vspace{-6pt}
- \begin{itemize}
-    \itemsep -6pt {} 
-     \item Assisted students with Python coding projects during office hours and in class
-     \item Organized meetings with 20-30 students each semester to provide course guidance
- \end{itemize}
-
- \textbf{AI Chef Project (1st place out of 12 groups)} \hfill %\\
-%Colorado School of Mines \hfill \textit{Golden, CO}
-\vspace{-6pt}
- \begin{itemize}
-    \itemsep -6pt {} 
-     \item Leveraged the \textbf{OpenAI API} to generate customized recipes for users based on ingredients available, dietary restrictions, price restrictions, and more.
-     \item Built user interface on top of \textbf{Streamlit} to allow for user input, image display, and recipe display
- \end{itemize}
+%\vspace{-6pt}
+% \begin{itemize}
+%    \itemsep -6pt {} 
+%     \item Assisted students with Python coding projects during office hours and in class
+%     \item Organized meetings with 20-30 students each semester to provide course guidance
+% \end{itemize}
  
 %\item \textbf{Lagrange Interpolation/Polynomial Regression Application} %\hfill 2022
 %\vspace{-6pt}
@@ -139,7 +150,7 @@ HiLabs \hfill
 \begin{rSection}{TECHNICAL SKILLS}
 %\begin{tabular}{ @{} >{\textit}l @{\hspace{6ex}} l }
 \textbf{Languages:} Python, R, C++, C, Java, PostgreSQL, Bash, RISC-V, LaTeX, OCaml, x++\\
-\textbf{Development Tools:} VS Code, Linux, Git, Jupyter Notebooks, RStudio, JetBrains, Vim, Eclipse, Docker
+\textbf{Development Tools:} VS Code, Linux, Git, Jupyter Notebooks, RStudio, JetBrains, Vim, Eclipse, Docker, AWS, High Performance Computing (HPC)
 \end{rSection}
 \vspace{-6pt}
 %----------------------------------------------------------------------------------------
